@@ -1,0 +1,12 @@
+{
+  "name": "vite-resolve-cache-atomic-change",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "repro": "node repro.mjs",
+    "control": "node repro.mjs --control"
+  },
+  "devDependencies": {
+    "vite": "8.3.8"
+  }
+}
