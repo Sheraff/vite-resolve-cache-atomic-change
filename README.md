@@ -1,6 +1,6 @@
 # Vite / Rolldown: a missing file stays missing after it comes back as a `change`
 
-Issue: (link added once filed)
+Issue: https://github.com/rolldown/rolldown/issues/11648
 
 `src/c.js` imports `./a`. `src/a.js` is removed, `/src/c.js` is requested while it is gone, and `a.js` is written back
 at once. Chokidar's `atomic` option reports the remove + re-create as one `change`, and `/src/c.js` keeps failing with
